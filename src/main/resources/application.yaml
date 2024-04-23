@@ -29,7 +29,7 @@ spring:
     ansi:
       enabled: Always
   rabbitmq:
-    addresses: amqps://oqaevxaf:6KU7WK_x0k2Et0CwgwlOOdf95NAR4uPG@woodpecker.rmq.cloudamqp.com/oqaevxaf
+    addresses: amqps://lgzglgzz:QCdrVDcoffePpevW6Rp8T3BiuPz_zcC5@shark.rmq.cloudamqp.com/lgzglgzz
 
 
 logging:
@@ -39,8 +39,16 @@ logging:
     org.springframework.web: DEBUG
     org.hibernate: INFO
 
+ead:
+  broker:
+    exchange:
+      notificationCommandExchange: ead.notificationcommand
+    queue:
+      notificationCommandQueue:
+        name: ead.notificationcommand.ms.notification
+    key:
+      notificationCommandKey: ms.notification
 
-# inserir broker properties
 
 
 management:
